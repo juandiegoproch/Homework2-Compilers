@@ -1,0 +1,5 @@
+push 6
+START: push 1
+sub
+print
+goto START
