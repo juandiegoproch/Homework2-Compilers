@@ -1,5 +1,24 @@
-push 6
-START: push 1
+push 5
+dup
+
+push 1
+jmple BASE_CASE
+
+dup
+L1: push 1
 sub
-print
-goto START
+dup
+store 1
+mul
+load 1
+dup
+push 1
+jmpgt L1
+pop
+goto END
+
+BASE_CASE: pop
+push 1
+goto END
+
+END: skip

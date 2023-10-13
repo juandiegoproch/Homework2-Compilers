@@ -158,7 +158,7 @@ void SVM::register_write(int r,int v) {
     perror("Invalid register number");
   registers[r] = v;
 }
-  
+
 int SVM::register_read(int r) {
   if (r > 7 || r < 0)
     perror("Invalid register number");
